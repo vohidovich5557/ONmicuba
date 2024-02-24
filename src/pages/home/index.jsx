@@ -25,10 +25,10 @@ export const Home = () => {
         <>
             <section className="seller">
                 <div className="container mt-[64px] flex flex-col items-center">
-                    <h2 className="text-3xl font-medium" data-aos="fade-down">Our bestsellers</h2>
+                    <h2 className="text-3xl font-medium">Our bestsellers</h2>
                     <div className="flex items-center gap-[34px] pl-[301px] pr-[301px] mt-[40px] mb-[36px]">
                         <ArrowLeft />
-                        <div className="grid grid-cols-4 gap-[20px]" data-aos="fade-up">
+                        <div className="grid grid-cols-4 gap-[20px]">
                             {sellerData.map((item) => (
                                 <SellerCard
                                     key={item.id}
@@ -41,7 +41,7 @@ export const Home = () => {
                         <ArrowRight />
                     </div>
                     <Button variant="secondary">Shop All</Button>
-                    <div className=" w-full h-[213px] bg-bgPink mt-[64px] flex items-center gap-[60px] justify-center " data-aos="fade-right">
+                    <div className=" w-full h-[213px] bg-bgPink mt-[64px] flex items-center gap-[60px] justify-center ">
                         {serviceData.map((item) => (
                             < ServiceCard
                                 img={item.img}
@@ -54,10 +54,10 @@ export const Home = () => {
             </section>
             <section className="blog">
                 <div className="container flex flex-col items-center mt-[64px] mb-[64px]">
-                    <h2 className="text-3xl font-medium mb-[40px]" data-aos="fade-down">Blogs</h2>
+                    <h2 className="text-3xl font-medium mb-[40px]">Blogs</h2>
                     <div className="flex items-center gap-[32px] mb-[40px]">
                         <ArrowLeft />
-                        <div className="grid grid-cols-4 gap-[20px]" data-aos="fade-up">
+                        <div className="grid grid-cols-4 gap-[20px]">
                             {blogData.map((item) => (
                                 <BlogCard
                                     img={item.img}
